@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>全部查询</title>
+</head>
+<body>
+   <table>
+     <tr>
+       <th>编号</th>
+       <th>姓名</th>
+       <th>薪水</th>
+     </tr>
+     <tr th:each="emp: ${emps}">
+      <td> [[emp.empno]]</td>
+       <td>[[emp.ename]]</td>
+       <td>[[emp.sal]]</td>
+     </tr>
+   </table>
+<span>
+  <a>首页</a>
+  <a href="|Allpage?pageno=${pagemo+1}|">上一页</a>
+  <a>下一页</a>
+  <a>末页</a>
+</span>
+</body>
+</html>

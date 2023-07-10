@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/css/default.css" rel="stylesheet" type="text/css" />
+    <title style="font-size:12px">用户登录</title>
+    <style type="text/css">
+        body {
+            font-family: Tahoma, Verdana;
+            font-size: 12px
+        }
+    </style>
+</head>
+<body>
+<div id="operation">
+    <div id="link_student" align="center" >
+        <form action="logins" method="post">
+            <TABLE class="divTab" width="500">
+                <TR>
+                    <TD colspan="2" align="center" style="font-size:25px;">个人用户登录</TD>
+                </TR>
+                <TR>
+                    <TD colspan="2" align="center" style="font-size:15px;color:red;">
+                    </TD>
+                </TR>
+                <TR>
+                    <TD align="right" width="35%">用户名：</TD>
+                    <TD align="left" width="65%"><INPUT TYPE="text"  name="account"></TD>
+                </TR>
+                <TR>
+                    <TD align="right" width="35%">密码：</TD>
+                    <TD align="left" width="65%"><INPUT TYPE="password" name="password"></TD>
+                </TR>
+                <TR>
+                    <TD colspan="2" align="center" style="font-size:30px;">
+                        <INPUT TYPE="submit" value="提　　交">
+                        <INPUT TYPE="reset" value="重　　置">
+                    </TD>
+                </TR>
+            </TABLE>
+        </form>
+    </div>
+</div>
+</body>
+</html>
